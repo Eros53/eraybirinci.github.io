@@ -53,3 +53,22 @@ p {
     background-position: top;
   }
 }
+@media only screen and (max-width: 768px) {
+  body {
+    background-position: top right !important;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+
+  .overlay {
+    padding: 30px;
+    text-align: left;
+  }
+}
