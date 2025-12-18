@@ -1,44 +1,55 @@
-/* Arka plan resmi */
-.hero {
+/* Genel ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
   background-image: url('../img/850582EC-58CE-44D1-A1DB-2E28C7F86E9F.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
+  color: white;
+  text-shadow: 0px 0px 5px #000000;
+}
 
+/* Yarı şeffaf katman */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
-
-  color: white;
   padding: 20px;
 }
 
-/* Yazıların stili */
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-weight: bold;
+/* Başlık ve metin */
+h1 {
+  font-size: 48px;
+  margin: 0;
 }
 
-.hero-content p {
-  font-size: 1.2em;
+p {
+  font-size: 24px;
+  margin: 10px 0 0 0;
 }
 
-/* Mobil cihazlar için optimizasyon */
-@media screen and (max-width: 768px) {
-  .hero {
-    background-position: right center;
-    background-size: cover;
+/* RESPONSIVE: Mobil cihazlarda ekran uyumu */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .overlay {
     padding: 40px 20px;
   }
 
-  .hero-content h1 {
-    font-size: 2em;
-  }
-
-  .hero-content p {
-    font-size: 1em;
+  body {
+    background-position: top;
   }
 }
