@@ -53,10 +53,13 @@ p {
     background-position: top;
   }
 }
+
 @media only screen and (max-width: 768px) {
   body {
-    background-position: top right !important;
+    background-position: 100% 0%;  /* Sağ üst köşeye odaklan */
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   h1 {
